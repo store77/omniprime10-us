@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniPrime10 US — Top 10 Amazon Best-Seller Departments & Buying Guides</title>
+    <meta name="description" content="Explore verified product reviews and side-by-side buying guides across Amazon's 10 best-selling categories: Smart Home, Pet Tech, Outdoor Gear, Fitness, Auto Tools, Audio, Baby, Power Tools, Luggage & Coffee.">
+    <link rel="canonical" href="https://store77.github.io/omniprime10-us/">
+    <style>
+        
+        :root {
+            --bg: #ffffff;
+            --surface: #f8fafc;
+            --border: #e2e8f0;
+            --navy: #0f172a;
+            --slate: #475569;
+            --indigo: #4f46e5;
+            --indigo-dark: #3730a3;
+            --indigo-light: #eef2ff;
+            --amber: #d97706;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--navy); line-height: 1.65; }
+        .compliance-bar { background: var(--navy); color: #f8fafc; font-size: 0.79rem; text-align: center; padding: 9px 16px; }
+        .compliance-bar strong { color: #818cf8; }
+        header { background: rgba(255,255,255,0.97); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
+        .nav-wrap { max-width: 1260px; margin: 0 auto; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .brand { font-size: 1.45rem; font-weight: 900; color: var(--navy); text-decoration: none; letter-spacing: -0.5px; }
+        .brand span { color: var(--indigo); }
+        .nav-links { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .nav-link { color: var(--navy); text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 6px 10px; border-radius: 6px; }
+        .nav-link:hover { background: var(--surface); color: var(--indigo); }
+        .mega-dropdown { position: relative; display: inline-block; }
+        .mega-menu { display: none; position: absolute; right: 0; top: 100%; width: 920px; max-width: 94vw; background: #fff; border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 22px 40px rgba(15,23,42,0.16); padding: 22px; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)); gap: 16px; z-index: 200; }
+        .mega-dropdown:hover .mega-menu { display: grid; }
+        .mega-col h4 { font-size: 0.83rem; color: var(--indigo-dark); margin-bottom: 6px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+        .mega-col a { display: block; color: var(--slate); text-decoration: none; font-size: 0.78rem; padding: 3px 0; }
+        .mega-col a:hover { color: var(--indigo); font-weight: 600; }
+        .container { max-width: 1260px; margin: 36px auto; padding: 0 20px; }
+        .btn-amz { display: inline-block; background: var(--indigo); color: #ffffff; font-weight: 700; text-decoration: none; padding: 11px 18px; border-radius: 8px; font-size: 0.86rem; text-align: center; transition: background 0.15s; }
+        .btn-amz:hover { background: var(--indigo-dark); }
+        .btn-outline { display: inline-block; background: #fff; color: var(--navy); border: 1px solid var(--border); font-weight: 600; text-decoration: none; padding: 10px 14px; border-radius: 8px; font-size: 0.84rem; text-align: center; }
+        .btn-outline:hover { border-color: var(--indigo); color: var(--indigo); }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+        .card { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.15s, box-shadow 0.15s; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(15,23,42,0.07); border-color: #cbd5e1; }
+        .card-img { width: 100%; height: 190px; object-fit: cover; background: #f1f5f9; border-bottom: 1px solid var(--border); }
+        .card-body { padding: 20px; display: flex; flex-direction: column; flex: 1; justify-content: space-between; }
+        .pill { display: inline-block; background: var(--indigo-light); color: var(--indigo-dark); font-size: 0.73rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; margin-bottom: 8px; width: fit-content; }
+        .micro-disclosure { font-size: 0.72rem; color: #64748b; margin: 10px 0 6px; }
+        footer { background: var(--surface); border-top: 1px solid var(--border); margin-top: 70px; padding: 48px 20px; color: var(--slate); font-size: 0.84rem; }
+        .footer-inner { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; }
+        .footer-inner h4 { color: var(--navy); margin-bottom: 10px; font-size: 0.94rem; }
+        .footer-inner a { display: block; color: var(--slate); text-decoration: none; padding: 3px 0; }
+        .footer-inner a:hover { color: var(--indigo); }
+    
+        .hero-banner { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: #ffffff; padding: 56px 20px; }
+        .hero-inner { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 32px; align-items: center; }
+        .hero-badge { display: inline-block; background: rgba(129,140,248,0.2); border: 1px solid #818cf8; color: #c7d2fe; font-size: 0.78rem; font-weight: 700; padding: 5px 12px; border-radius: 999px; margin-bottom: 14px; }
+        .hero-banner h1 { font-size: 2.35rem; line-height: 1.2; margin-bottom: 14px; }
+        .search-bar { display: flex; gap: 10px; margin-top: 22px; max-width: 620px; }
+        .search-bar input { flex: 1; padding: 14px 18px; border-radius: 10px; border: none; font-size: 1rem; outline: none; }
+        .filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 22px 0; }
+        .f-btn { background: var(--surface); border: 1px solid var(--border); color: var(--navy); padding: 7px 13px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+        .f-btn.active, .f-btn:hover { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+        .sec-head { display: flex; justify-content: space-between; align-items: baseline; margin: 46px 0 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px; flex-wrap: wrap; gap: 10px; }
+        @media (max-width: 820px) { .hero-inner { grid-template-columns: 1fr; } .hero-banner h1 { font-size: 1.85rem; } }
+    </style>
+</head>
+<body>
+    
+    <div class="compliance-bar">
+        <strong>AFFILIATE DISCLOSURE:</strong> As an Amazon Associate I earn from qualifying purchases. Stock imagery provided via Openverse &amp; Wikimedia Commons Public APIs.
+    </div>
+    <header>
+        <div class="nav-wrap">
+            <a href="https://store77.github.io/omniprime10-us/" class="brand">🌐 Omni<span>Prime10</span> US</a>
+            <nav class="nav-links">
+                <a href="https://store77.github.io/omniprime10-us/" class="nav-link">Storefront</a>
+                <div class="mega-dropdown">
+                    <a href="#departments" class="nav-link">10 Best-Seller Categories &#9662;</a>
+                    <div class="mega-menu">
+                        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/smart-home-security-tech.html" style="color:var(--indigo-dark);font-size:0.84rem;">🛡️ Smart Home & Security Tech</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/4k-solar-security-cameras.html">&rsaquo; 4K Solar Security Cameras</a><a href="https://store77.github.io/omniprime10-us/categories/biometric-smart-deadbolts.html">&rsaquo; Biometric Smart Deadbolts</a><a href="https://store77.github.io/omniprime10-us/categories/wifi-7-mesh-routers.html">&rsaquo; Wi-Fi 7 Mesh Routers</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/pet-care-automated-tech.html" style="color:var(--indigo-dark);font-size:0.84rem;">🐾 Pet Care & Automated Tech</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/self-cleaning-cat-litter-boxes.html">&rsaquo; Self-Cleaning Cat Litter Boxes</a><a href="https://store77.github.io/omniprime10-us/categories/smart-camera-pet-feeders.html">&rsaquo; Smart Camera Pet Feeders</a><a href="https://store77.github.io/omniprime10-us/categories/orthopedic-memory-foam-dog-beds.html">&rsaquo; Orthopedic Dog Beds</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/outdoor-gear-camping.html" style="color:var(--indigo-dark);font-size:0.84rem;">⛺ Outdoor Gear & Camping</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/ultralight-backpacking-tents.html">&rsaquo; Ultralight Backpacking Tents</a><a href="https://store77.github.io/omniprime10-us/categories/rotomolded-hard-coolers.html">&rsaquo; Rotomolded Hard Coolers</a><a href="https://store77.github.io/omniprime10-us/categories/portable-backcountry-water-filters.html">&rsaquo; Portable Water Filters</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/fitness-recovery-equipment.html" style="color:var(--indigo-dark);font-size:0.84rem;">🏋️ Fitness & Recovery Equipment</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/quick-lock-adjustable-dumbbells.html">&rsaquo; Adjustable Dumbbell Sets</a><a href="https://store77.github.io/omniprime10-us/categories/under-desk-walking-pad-treadmills.html">&rsaquo; Under-Desk Walking Pads</a><a href="https://store77.github.io/omniprime10-us/categories/percussion-deep-tissue-massage-guns.html">&rsaquo; Deep-Tissue Massage Guns</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/automotive-garage-tools.html" style="color:var(--indigo-dark);font-size:0.84rem;">🚗 Automotive & Garage Tools</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/3-channel-4k-dash-cams.html">&rsaquo; 3-Channel 4K Dash Cams</a><a href="https://store77.github.io/omniprime10-us/categories/lithium-car-battery-jump-starters.html">&rsaquo; Lithium Jump Starters</a><a href="https://store77.github.io/omniprime10-us/categories/bidirectional-obd2-diagnostic-scanners.html">&rsaquo; Bi-Directional OBD2 Scanners</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/audio-creator-studio-gear.html" style="color:var(--indigo-dark);font-size:0.84rem;">🎧 Audio & Creator Studio Gear</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/anc-wireless-over-ear-headphones.html">&rsaquo; ANC Over-Ear Headphones</a><a href="https://store77.github.io/omniprime10-us/categories/xlr-usb-dynamic-podcast-microphones.html">&rsaquo; XLR/USB Podcast Microphones</a><a href="https://store77.github.io/omniprime10-us/categories/dolby-atmos-home-theater-soundbars.html">&rsaquo; Dolby Atmos Soundbars</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/baby-nursery-essentials.html" style="color:var(--indigo-dark);font-size:0.84rem;">🍼 Baby & Nursery Essentials</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/split-screen-video-baby-monitors.html">&rsaquo; 4K Split-Screen Baby Monitors</a><a href="https://store77.github.io/omniprime10-us/categories/all-in-one-convertible-car-seats.html">&rsaquo; All-in-One Convertible Car Seats</a><a href="https://store77.github.io/omniprime10-us/categories/compact-overhead-bin-travel-strollers.html">&rsaquo; Compact Travel Strollers</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/lawn-patio-power-tools.html" style="color:var(--indigo-dark);font-size:0.84rem;">🛠️ Lawn, Patio & Power Tools</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/brushless-cordless-drill-combo-kits.html">&rsaquo; Brushless Cordless Drill Combos</a><a href="https://store77.github.io/omniprime10-us/categories/wire-free-robotic-lawn-mowers.html">&rsaquo; Robotic Lawn Mowers</a><a href="https://store77.github.io/omniprime10-us/categories/electric-high-psi-pressure-washers.html">&rsaquo; Electric Pressure Washers</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/travel-luggage-carry-ons.html" style="color:var(--indigo-dark);font-size:0.84rem;">🧳 Travel Luggage & Carry-Ons</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/polycarbonate-hardshell-spinner-luggage.html">&rsaquo; Polycarbonate Hardshell Spinners</a><a href="https://store77.github.io/omniprime10-us/categories/tsa-laptop-travel-backpacks.html">&rsaquo; TSA Laptop Travel Backpacks</a><a href="https://store77.github.io/omniprime10-us/categories/compression-travel-packing-cubes.html">&rsaquo; Compression Packing Cubes</a>
+        </div>
+        
+        <div class="mega-col">
+            <h4><a href="https://store77.github.io/omniprime10-us/categories/coffee-tea-craft-beverage.html" style="color:var(--indigo-dark);font-size:0.84rem;">☕ Coffee, Tea & Craft Beverage</a></h4>
+            <a href="https://store77.github.io/omniprime10-us/categories/conical-flat-burr-coffee-grinders.html">&rsaquo; Conical Burr Coffee Grinders</a><a href="https://store77.github.io/omniprime10-us/categories/variable-temp-gooseneck-electric-kettles.html">&rsaquo; Variable-Temp Gooseneck Kettles</a><a href="https://store77.github.io/omniprime10-us/categories/cold-brew-nitro-coffee-makers.html">&rsaquo; Cold Brew & Nitro Makers</a>
+        </div>
+        
+                    </div>
+                </div>
+                <a href="https://store77.github.io/omniprime10-us/#featured" class="nav-link">Featured Picks</a>
+                <a href="https://store77.github.io/omniprime10-us/#reviews" class="nav-link">12H Buying Guides</a>
+                <a href="https://store77.github.io/omniprime10-us/legal.html" class="nav-link">Policies</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero-banner">
+        <div class="hero-inner">
+            <div>
+                <span class="hero-badge">10 BEST-SELLING DEPARTMENTS &bull; AUTO-UPDATED EVERY 12 HOURS</span>
+                <h1>The Complete US Buying-Guide Storefront Across 10 Top-Selling Categories</h1>
+                <p style="color:#e0e7ff;font-size:1.04rem;">Compare verified specifications across Smart Home Security, Automated Pet Care, Backcountry Camping, Home Gym Fitness, Automotive Diagnostics, Creator Audio, Baby Essentials, Power Tools, Travel Luggage & Specialty Coffee.</p>
+                <div class="search-bar">
+                    <input type="text" id="liveSearch" placeholder="Search across all 10 departments (e.g. eufy, Litter-Robot, YETI, Bowflex, Shure, Samsonite)..." onkeyup="runSearch()">
+                </div>
+            </div>
+            <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);border-radius:16px;padding:24px;">
+                <div style="font-size:0.78rem;color:#c7d2fe;font-weight:700;text-transform:uppercase;margin-bottom:6px;">Storefront Inventory</div>
+                <div style="font-size:1.6rem;font-weight:900;margin-bottom:4px;">20 Active Products</div>
+                <div style="font-size:0.9rem;color:#e0e7ff;margin-bottom:14px;">5 Comparative Review Guides</div>
+                <a href="#featured" class="btn-amz" style="width:100%;background:#6366f1;">Explore Featured Best-Sellers &darr;</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="sec-head" id="departments">
+            <h2>Browse All 10 Best-Selling Amazon Departments</h2>
+            <span style="font-size:0.85rem;color:var(--slate);">10 Flagship Categories &bull; 30 Specialized Subcategories</span>
+        </div>
+        <div class="grid-3">
+        <a href="https://store77.github.io/omniprime10-us/categories/smart-home-security-tech.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🛡️</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Smart Home & Security Tech</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">4K Solar Security Cameras &bull; Biometric Smart Deadbolts &bull; Wi-Fi 7 Mesh Routers</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/pet-care-automated-tech.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🐾</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Pet Care & Automated Tech</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">Self-Cleaning Cat Litter Boxes &bull; Smart Camera Pet Feeders &bull; Orthopedic Dog Beds</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/outdoor-gear-camping.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">⛺</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Outdoor Gear & Camping</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">Ultralight Backpacking Tents &bull; Rotomolded Hard Coolers &bull; Portable Water Filters</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/fitness-recovery-equipment.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🏋️</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Fitness & Recovery Equipment</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">Adjustable Dumbbell Sets &bull; Under-Desk Walking Pads &bull; Deep-Tissue Massage Guns</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/automotive-garage-tools.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🚗</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Automotive & Garage Tools</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">3-Channel 4K Dash Cams &bull; Lithium Jump Starters &bull; Bi-Directional OBD2 Scanners</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/audio-creator-studio-gear.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🎧</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Audio & Creator Studio Gear</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">ANC Over-Ear Headphones &bull; XLR/USB Podcast Microphones &bull; Dolby Atmos Soundbars</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/baby-nursery-essentials.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🍼</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Baby & Nursery Essentials</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">4K Split-Screen Baby Monitors &bull; All-in-One Convertible Car Seats &bull; Compact Travel Strollers</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/lawn-patio-power-tools.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🛠️</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Lawn, Patio & Power Tools</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">Brushless Cordless Drill Combos &bull; Robotic Lawn Mowers &bull; Electric Pressure Washers</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/travel-luggage-carry-ons.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">🧳</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Travel Luggage & Carry-Ons</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">Polycarbonate Hardshell Spinners &bull; TSA Laptop Travel Backpacks &bull; Compression Packing Cubes</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        
+        <a href="https://store77.github.io/omniprime10-us/categories/coffee-tea-craft-beverage.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-body">
+                <div>
+                    <div style="font-size:2rem;margin-bottom:8px;">☕</div>
+                    <h3 style="font-size:1.08rem;color:var(--navy);margin-bottom:6px;">Coffee, Tea & Craft Beverage</h3>
+                    <p style="font-size:0.82rem;color:var(--slate);">Conical Burr Coffee Grinders &bull; Variable-Temp Gooseneck Kettles &bull; Cold Brew & Nitro Makers</p>
+                </div>
+                <span style="margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--indigo);">Shop Department &rarr;</span>
+            </div>
+        </a>
+        </div>
+
+        <div class="sec-head" id="featured">
+            <h2>Featured Best-Selling Products</h2>
+            <span style="font-size:0.85rem;color:var(--slate);">+20 New Products Published Every 12 Hours</span>
+        </div>
+        <div class="filter-row"><button class="f-btn active" onclick="filterDept('all', this)">All 10 Departments</button><button class="f-btn" onclick="filterDept('smart-home-security-tech', this)">🛡️ Smart Home & Security Tech</button><button class="f-btn" onclick="filterDept('pet-care-automated-tech', this)">🐾 Pet Care & Automated Tech</button><button class="f-btn" onclick="filterDept('outdoor-gear-camping', this)">⛺ Outdoor Gear & Camping</button><button class="f-btn" onclick="filterDept('fitness-recovery-equipment', this)">🏋️ Fitness & Recovery Equipment</button><button class="f-btn" onclick="filterDept('automotive-garage-tools', this)">🚗 Automotive & Garage Tools</button><button class="f-btn" onclick="filterDept('audio-creator-studio-gear', this)">🎧 Audio & Creator Studio Gear</button><button class="f-btn" onclick="filterDept('baby-nursery-essentials', this)">🍼 Baby & Nursery Essentials</button><button class="f-btn" onclick="filterDept('lawn-patio-power-tools', this)">🛠️ Lawn, Patio & Power Tools</button><button class="f-btn" onclick="filterDept('travel-luggage-carry-ons', this)">🧳 Travel Luggage & Carry-Ons</button><button class="f-btn" onclick="filterDept('coffee-tea-craft-beverage', this)">☕ Coffee, Tea & Craft Beverage</button></div>
+        <div class="grid-3" id="productsContainer">
+        <article class="card prod-card" data-cat="baby-nursery-essentials">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Child_car_seat.JPG/960px-Child_car_seat.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Graco 4Ever DLX Grad 4-in-1 (10-Year Use) (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🍼 All-in-One Convertible Car Seats</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/graco-4ever-dlx-grad-4-in-1-10-year-use-2026-pro-edition-20.html" style="color:var(--navy);text-decoration:none;">Graco 4Ever DLX Grad 4-in-1 (10-Year Use) (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Graco 4Ever DLX Grad 4-in-1 (10-Year Use) (2026 Pro Edition) is an Amazon top-ranked all-in-one convertible car seats—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Graco+4Ever+DLX+Grad+4-in-1+%2810-Year+Use%29+All-in-One+Convertible+Car+Seats&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/graco-4ever-dlx-grad-4-in-1-10-year-use-2026-pro-edition-20.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="baby-nursery-essentials">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/The_report_of_the_Philadelphia_baby_saving_show%2C_and_the_proceedings_of_the_Conference_on_infant_hygiene_%281913%29_%2814803585163%29.jpg/960px-The_report_of_the_Philadelphia_baby_saving_show%2C_and_the_proceedings_of_the_Conference_on_infant_hygiene_%281913%29_%2814803585163%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Infant Optics DXR-8 PRO Active Noise Reduction (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🍼 4K Split-Screen Baby Monitors</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/infant-optics-dxr-8-pro-active-noise-reduction-2026-pro-edition-19.html" style="color:var(--navy);text-decoration:none;">Infant Optics DXR-8 PRO Active Noise Reduction (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Infant Optics DXR-8 PRO Active Noise Reduction (2026 Pro Edition) is an Amazon top-ranked 4k split-screen baby monitors—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Infant+Optics+DXR-8+PRO+Active+Noise+Reduction+4K+Split-Screen+Baby+Monitors&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/infant-optics-dxr-8-pro-active-noise-reduction-2026-pro-edition-19.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="audio-creator-studio-gear">
+            <img src="https://loremflickr.com/640/440/home?lock=118" alt="Sonos Arc Ultra / Beam Gen 2 Dolby Atmos (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🎧 Dolby Atmos Soundbars</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/sonos-arc-ultra-beam-gen-2-dolby-atmos-2026-pro-edition-18.html" style="color:var(--navy);text-decoration:none;">Sonos Arc Ultra / Beam Gen 2 Dolby Atmos (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Sonos Arc Ultra / Beam Gen 2 Dolby Atmos (2026 Pro Edition) is an Amazon top-ranked dolby atmos soundbars—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Sonos+Arc+Ultra+%2F+Beam+Gen+2+Dolby+Atmos+Dolby+Atmos+Soundbars&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/sonos-arc-ultra-beam-gen-2-dolby-atmos-2026-pro-edition-18.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="audio-creator-studio-gear">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Microphones_in_SPNN_Podcast_studio-01.jpg/960px-Microphones_in_SPNN_Podcast_studio-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Shure MV7+ Hybrid XLR/USB-C Dynamic (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🎧 XLR/USB Podcast Microphones</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/shure-mv7-hybrid-xlr-usb-c-dynamic-2026-pro-edition-17.html" style="color:var(--navy);text-decoration:none;">Shure MV7+ Hybrid XLR/USB-C Dynamic (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Shure MV7+ Hybrid XLR/USB-C Dynamic (2026 Pro Edition) is an Amazon top-ranked xlr/usb podcast microphones—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Shure+MV7%2B+Hybrid+XLR%2FUSB-C+Dynamic+XLR%2FUSB+Podcast+Microphones&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/shure-mv7-hybrid-xlr-usb-c-dynamic-2026-pro-edition-17.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="audio-creator-studio-gear">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cycling_Amsterdam_03.jpg/960px-Cycling_Amsterdam_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Sony WH-1000XM5 / WH-CH720N Wireless ANC (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🎧 ANC Over-Ear Headphones</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/sony-wh-1000xm5-wh-ch720n-wireless-anc-2026-pro-edition-16.html" style="color:var(--navy);text-decoration:none;">Sony WH-1000XM5 / WH-CH720N Wireless ANC (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Sony WH-1000XM5 / WH-CH720N Wireless ANC (2026 Pro Edition) is an Amazon top-ranked anc over-ear headphones—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Sony+WH-1000XM5+%2F+WH-CH720N+Wireless+ANC+ANC+Over-Ear+Headphones&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/sony-wh-1000xm5-wh-ch720n-wireless-anc-2026-pro-edition-16.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="automotive-garage-tools">
+            <img src="https://loremflickr.com/640/440/car?lock=115" alt="BlueDriver Bluetooth Pro OBDII Scan Tool (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🚗 Bi-Directional OBD2 Scanners</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/bluedriver-bluetooth-pro-obdii-scan-tool-2026-pro-edition-15.html" style="color:var(--navy);text-decoration:none;">BlueDriver Bluetooth Pro OBDII Scan Tool (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The BlueDriver Bluetooth Pro OBDII Scan Tool (2026 Pro Edition) is an Amazon top-ranked bi-directional obd2 scanners—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=BlueDriver+Bluetooth+Pro+OBDII+Scan+Tool+Bi-Directional+OBD2+Scanners&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/bluedriver-bluetooth-pro-obdii-scan-tool-2026-pro-edition-15.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="automotive-garage-tools">
+            <img src="https://loremflickr.com/640/440/car?lock=114" alt="NOCO Boost Plus GB40 / GB50 XL 1500A (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🚗 Lithium Jump Starters</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/noco-boost-plus-gb40-gb50-xl-1500a-2026-pro-edition-14.html" style="color:var(--navy);text-decoration:none;">NOCO Boost Plus GB40 / GB50 XL 1500A (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The NOCO Boost Plus GB40 / GB50 XL 1500A (2026 Pro Edition) is an Amazon top-ranked lithium jump starters—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=NOCO+Boost+Plus+GB40+%2F+GB50+XL+1500A+Lithium+Jump+Starters&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/noco-boost-plus-gb40-gb50-xl-1500a-2026-pro-edition-14.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="automotive-garage-tools">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Rain_on_windshield_%2852352548307%29.jpg/960px-Rain_on_windshield_%2852352548307%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="VIOFO A229 Pro 3CH 4K Sony STARVIS 2 (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🚗 3-Channel 4K Dash Cams</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/viofo-a229-pro-3ch-4k-sony-starvis-2-2026-pro-edition-13.html" style="color:var(--navy);text-decoration:none;">VIOFO A229 Pro 3CH 4K Sony STARVIS 2 (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The VIOFO A229 Pro 3CH 4K Sony STARVIS 2 (2026 Pro Edition) is an Amazon top-ranked 3-channel 4k dash cams—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=VIOFO+A229+Pro+3CH+4K+Sony+STARVIS+2+3-Channel+4K+Dash+Cams&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/viofo-a229-pro-3ch-4k-sony-starvis-2-2026-pro-edition-13.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="fitness-recovery-equipment">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Theragun_%2851818229810%29.jpg/960px-Theragun_%2851818229810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Therabody Theragun Prime / Relief Ergonomic (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🏋️ Deep-Tissue Massage Guns</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/therabody-theragun-prime-relief-ergonomic-2026-pro-edition-12.html" style="color:var(--navy);text-decoration:none;">Therabody Theragun Prime / Relief Ergonomic (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Therabody Theragun Prime / Relief Ergonomic (2026 Pro Edition) is an Amazon top-ranked deep-tissue massage guns—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Therabody+Theragun+Prime+%2F+Relief+Ergonomic+Deep-Tissue+Massage+Guns&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/therabody-theragun-prime-relief-ergonomic-2026-pro-edition-12.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="fitness-recovery-equipment">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Exercise_Treadmill_Convey_Motion.jpg/960px-Exercise_Treadmill_Convey_Motion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="UREVO 2-in-1 Folding Incline Walking Pad (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🏋️ Under-Desk Walking Pads</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/urevo-2-in-1-folding-incline-walking-pad-2026-pro-edition-11.html" style="color:var(--navy);text-decoration:none;">UREVO 2-in-1 Folding Incline Walking Pad (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The UREVO 2-in-1 Folding Incline Walking Pad (2026 Pro Edition) is an Amazon top-ranked under-desk walking pads—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=UREVO+2-in-1+Folding+Incline+Walking+Pad+Under-Desk+Walking+Pads&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/urevo-2-in-1-folding-incline-walking-pad-2026-pro-edition-11.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="fitness-recovery-equipment">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Attractive_man_lifting_dumbbell_weight_for_exercise_in_fitness_gym.jpg/960px-Attractive_man_lifting_dumbbell_weight_for_exercise_in_fitness_gym.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Bowflex SelectTech 552 Dual Pair (5–52.5 lbs) (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🏋️ Adjustable Dumbbell Sets</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/bowflex-selecttech-552-dual-pair-5-52-5-lbs-2026-pro-edition-10.html" style="color:var(--navy);text-decoration:none;">Bowflex SelectTech 552 Dual Pair (5–52.5 lbs) (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Bowflex SelectTech 552 Dual Pair (5–52.5 lbs) (2026 Pro Edition) is an Amazon top-ranked adjustable dumbbell sets—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Bowflex+SelectTech+552+Dual+Pair+%285%E2%80%9352.5+lbs%29+Adjustable+Dumbbell+Sets&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/bowflex-selecttech-552-dual-pair-5-52-5-lbs-2026-pro-edition-10.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="outdoor-gear-camping">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hiker_resting_drinking_water_in_mountains.jpg/960px-Hiker_resting_drinking_water_in_mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Sawyer Squeeze 0.1 Micron Hollow-Fiber System (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">⛺ Portable Water Filters</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/sawyer-squeeze-0-1-micron-hollow-fiber-system-2026-pro-edition-9.html" style="color:var(--navy);text-decoration:none;">Sawyer Squeeze 0.1 Micron Hollow-Fiber System (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Sawyer Squeeze 0.1 Micron Hollow-Fiber System (2026 Pro Edition) is an Amazon top-ranked portable water filters—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Sawyer+Squeeze+0.1+Micron+Hollow-Fiber+System+Portable+Water+Filters&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/sawyer-squeeze-0-1-micron-hollow-fiber-system-2026-pro-edition-9.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="outdoor-gear-camping">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Bird%27s-eye_view_of_Greater_New_York_and_its_most_magnificent_store_-_being_a_concise_and_comprehensive_visitor%27s_guide_to_Greater_New_York%2C_its_myriad_%281898%29_%2814771650153%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="YETI Tundra 45 / Roadie 48 Wheeled (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">⛺ Rotomolded Hard Coolers</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/yeti-tundra-45-roadie-48-wheeled-2026-pro-edition-8.html" style="color:var(--navy);text-decoration:none;">YETI Tundra 45 / Roadie 48 Wheeled (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The YETI Tundra 45 / Roadie 48 Wheeled (2026 Pro Edition) is an Amazon top-ranked rotomolded hard coolers—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=YETI+Tundra+45+%2F+Roadie+48+Wheeled+Rotomolded+Hard+Coolers&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/yeti-tundra-45-roadie-48-wheeled-2026-pro-edition-8.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="outdoor-gear-camping">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Nature_Landscape_Tent_Camp_Climb_Hike_Trek.jpg/960px-Nature_Landscape_Tent_Camp_Climb_Hike_Trek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Big Agnes Copper Spur HV UL2 Bikepack/Trail (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">⛺ Ultralight Backpacking Tents</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/big-agnes-copper-spur-hv-ul2-bikepack-trail-2026-pro-edition-7.html" style="color:var(--navy);text-decoration:none;">Big Agnes Copper Spur HV UL2 Bikepack/Trail (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Big Agnes Copper Spur HV UL2 Bikepack/Trail (2026 Pro Edition) is an Amazon top-ranked ultralight backpacking tents—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Big+Agnes+Copper+Spur+HV+UL2+Bikepack%2FTrail+Ultralight+Backpacking+Tents&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/big-agnes-copper-spur-hv-ul2-bikepack-trail-2026-pro-edition-7.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="pet-care-automated-tech">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Dog_sleeping_in_a_dog_bed.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="Big Barker 7-Inch Pillow Top Orthopedic XL (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🐾 Orthopedic Dog Beds</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/big-barker-7-inch-pillow-top-orthopedic-xl-2026-pro-edition-6.html" style="color:var(--navy);text-decoration:none;">Big Barker 7-Inch Pillow Top Orthopedic XL (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Big Barker 7-Inch Pillow Top Orthopedic XL (2026 Pro Edition) is an Amazon top-ranked orthopedic dog beds—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Big+Barker+7-Inch+Pillow+Top+Orthopedic+XL+Orthopedic+Dog+Beds&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/big-barker-7-inch-pillow-top-orthopedic-xl-2026-pro-edition-6.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="pet-care-automated-tech">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Captain_Lord_George_Graham%2C_1715-47%2C_in_his_Cabin_RMG_L9661.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="PETLIBRO Granary Dual-Food 1080p Camera Feeder (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🐾 Smart Camera Pet Feeders</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/petlibro-granary-dual-food-1080p-camera-feeder-2026-pro-edition-5.html" style="color:var(--navy);text-decoration:none;">PETLIBRO Granary Dual-Food 1080p Camera Feeder (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The PETLIBRO Granary Dual-Food 1080p Camera Feeder (2026 Pro Edition) is an Amazon top-ranked smart camera pet feeders—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=PETLIBRO+Granary+Dual-Food+1080p+Camera+Feeder+Smart+Camera+Pet+Feeders&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/petlibro-granary-dual-food-1080p-camera-feeder-2026-pro-edition-5.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="pet-care-automated-tech">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Sleeping_Cat_on_Pet_Shop_Counter_20121110.jpg/960px-Sleeping_Cat_on_Pet_Shop_Counter_20121110.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Litter-Robot 4 Wi-Fi Open-Air Sifting Globe (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🐾 Self-Cleaning Cat Litter Boxes</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/litter-robot-4-wi-fi-open-air-sifting-globe-2026-pro-edition-4.html" style="color:var(--navy);text-decoration:none;">Litter-Robot 4 Wi-Fi Open-Air Sifting Globe (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Litter-Robot 4 Wi-Fi Open-Air Sifting Globe (2026 Pro Edition) is an Amazon top-ranked self-cleaning cat litter boxes—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Litter-Robot+4+Wi-Fi+Open-Air+Sifting+Globe+Self-Cleaning+Cat+Litter+Boxes&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/litter-robot-4-wi-fi-open-air-sifting-globe-2026-pro-edition-4.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="smart-home-security-tech">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Wi-fi_router.jpg/960px-Wi-fi_router.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="TP-Link Deco BE65 Pro Tri-Band Wi-Fi 7 (3-Pack) (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🛡️ Wi-Fi 7 Mesh Routers</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/tp-link-deco-be65-pro-tri-band-wi-fi-7-3-pack-2026-pro-edition-3.html" style="color:var(--navy);text-decoration:none;">TP-Link Deco BE65 Pro Tri-Band Wi-Fi 7 (3-Pack) (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The TP-Link Deco BE65 Pro Tri-Band Wi-Fi 7 (3-Pack) (2026 Pro Edition) is an Amazon top-ranked wi-fi 7 mesh routers—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=TP-Link+Deco+BE65+Pro+Tri-Band+Wi-Fi+7+%283-Pack%29+Wi-Fi+7+Mesh+Routers&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/tp-link-deco-be65-pro-tri-band-wi-fi-7-3-pack-2026-pro-edition-3.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="smart-home-security-tech">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Yale_Smart_lock_Facial_recognition_system_displayF.jpg/960px-Yale_Smart_lock_Facial_recognition_system_displayF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Schlage Encode Plus Wi-Fi HomeKey (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🛡️ Biometric Smart Deadbolts</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/schlage-encode-plus-wi-fi-homekey-2026-pro-edition-2.html" style="color:var(--navy);text-decoration:none;">Schlage Encode Plus Wi-Fi HomeKey (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The Schlage Encode Plus Wi-Fi HomeKey (2026 Pro Edition) is an Amazon top-ranked biometric smart deadbolts—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=Schlage+Encode+Plus+Wi-Fi+HomeKey+Biometric+Smart+Deadbolts&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/schlage-encode-plus-wi-fi-homekey-2026-pro-edition-2.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card prod-card" data-cat="smart-home-security-tech">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Gare_-_couloir_nord_%28Strasbourg%29_%282%29.jpg/960px-Gare_-_couloir_nord_%28Strasbourg%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="eufy Security SoloCam S340 Dual-Lens Solar (2026 Pro Edition)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span class="pill" style="margin:0;">🛡️ 4K Solar Security Cameras</span>
+                        <span style="font-size:0.74rem;font-weight:700;color:var(--amber);">★ Top Pick</span>
+                    </div>
+                    <h3 style="font-size:1.06rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/products/eufy-security-solocam-s340-dual-lens-solar-2026-pro-edition-1.html" style="color:var(--navy);text-decoration:none;">eufy Security SoloCam S340 Dual-Lens Solar (2026 Pro Edition)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);margin-bottom:10px;">The eufy Security SoloCam S340 Dual-Lens Solar (2026 Pro Edition) is an Amazon top-ranked 4k solar security cameras—an updated 2026 top-seller configuration engineered for daily reliability.</p>
+                </div>
+                <div>
+                    <div class="micro-disclosure">As an Amazon Associate I earn from qualifying purchases.</div>
+                    <div style="display:flex;gap:8px;">
+                        <a href="https://www.amazon.com/s?k=eufy+Security+SoloCam+S340+Dual-Lens+Solar+4K+Solar+Security+Cameras&s=exact-aware-popularity-rank&rh=p_72%3A1248873011&tag=everythi00099-20" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amz" style="flex:1;">Check Price on Amazon</a>
+                        <a href="https://store77.github.io/omniprime10-us/products/eufy-security-solocam-s340-dual-lens-solar-2026-pro-edition-1.html" class="btn-outline">Specs</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        </div>
+
+        <div class="sec-head" id="reviews">
+            <h2>Latest 12-Hour Comparative Review Articles</h2>
+            <span style="font-size:0.85rem;color:var(--slate);">+5 New 4-Model Buying Guides Every 12 Hours</span>
+        </div>
+        <div class="grid-3">
+        <article class="card">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Microphones_in_SPNN_Podcast_studio-01.jpg/960px-Microphones_in_SPNN_Podcast_studio-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Top 4 Best-Selling XLR/USB Podcast Microphones & Buying Guide (2026 Review)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <span class="pill">Audio & Creator Studio Gear</span>
+                    <h3 style="font-size:1.08rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/reviews/best-xlr-usb-podcast-microphones-review-comparison-c1-5.html" style="color:var(--navy);text-decoration:none;">Top 4 Best-Selling XLR/USB Podcast Microphones & Buying Guide (2026 Review)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);">Side-by-side comparison of Shure MV7+ Hybrid XLR/USB-C Dynamic (2026 Pro Edition), Sonos Arc Ultra / Beam Gen 2 Dolby Atmos (2026 Pro Edition), and 2 more best-selling picks.</p>
+                </div>
+                <div style="margin-top:14px;">
+                    <a href="https://store77.github.io/omniprime10-us/reviews/best-xlr-usb-podcast-microphones-review-comparison-c1-5.html" class="btn-outline" style="width:100%;">Read 4-Product Review &rarr;</a>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Rain_on_windshield_%2852352548307%29.jpg/960px-Rain_on_windshield_%2852352548307%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Top 4 Best-Selling 3-Channel 4K Dash Cams & Buying Guide (2026 Review)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <span class="pill">Automotive & Garage Tools</span>
+                    <h3 style="font-size:1.08rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/reviews/best-3-channel-4k-dash-cams-review-comparison-c1-4.html" style="color:var(--navy);text-decoration:none;">Top 4 Best-Selling 3-Channel 4K Dash Cams & Buying Guide (2026 Review)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);">Side-by-side comparison of VIOFO A229 Pro 3CH 4K Sony STARVIS 2 (2026 Pro Edition), NOCO Boost Plus GB40 / GB50 XL 1500A (2026 Pro Edition), and 2 more best-selling picks.</p>
+                </div>
+                <div style="margin-top:14px;">
+                    <a href="https://store77.github.io/omniprime10-us/reviews/best-3-channel-4k-dash-cams-review-comparison-c1-4.html" class="btn-outline" style="width:100%;">Read 4-Product Review &rarr;</a>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hiker_resting_drinking_water_in_mountains.jpg/960px-Hiker_resting_drinking_water_in_mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Top 4 Best-Selling Portable Water Filters & Buying Guide (2026 Review)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <span class="pill">Outdoor Gear & Camping</span>
+                    <h3 style="font-size:1.08rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/reviews/best-portable-water-filters-review-comparison-c1-3.html" style="color:var(--navy);text-decoration:none;">Top 4 Best-Selling Portable Water Filters & Buying Guide (2026 Review)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);">Side-by-side comparison of Sawyer Squeeze 0.1 Micron Hollow-Fiber System (2026 Pro Edition), Bowflex SelectTech 552 Dual Pair (5–52.5 lbs) (2026 Pro Edition), and 2 more best-selling picks.</p>
+                </div>
+                <div style="margin-top:14px;">
+                    <a href="https://store77.github.io/omniprime10-us/reviews/best-portable-water-filters-review-comparison-c1-3.html" class="btn-outline" style="width:100%;">Read 4-Product Review &rarr;</a>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Captain_Lord_George_Graham%2C_1715-47%2C_in_his_Cabin_RMG_L9661.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="Top 4 Best-Selling Smart Camera Pet Feeders & Buying Guide (2026 Review)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <span class="pill">Pet Care & Automated Tech</span>
+                    <h3 style="font-size:1.08rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/reviews/best-smart-camera-pet-feeders-review-comparison-c1-2.html" style="color:var(--navy);text-decoration:none;">Top 4 Best-Selling Smart Camera Pet Feeders & Buying Guide (2026 Review)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);">Side-by-side comparison of PETLIBRO Granary Dual-Food 1080p Camera Feeder (2026 Pro Edition), Big Barker 7-Inch Pillow Top Orthopedic XL (2026 Pro Edition), and 2 more best-selling picks.</p>
+                </div>
+                <div style="margin-top:14px;">
+                    <a href="https://store77.github.io/omniprime10-us/reviews/best-smart-camera-pet-feeders-review-comparison-c1-2.html" class="btn-outline" style="width:100%;">Read 4-Product Review &rarr;</a>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Gare_-_couloir_nord_%28Strasbourg%29_%282%29.jpg/960px-Gare_-_couloir_nord_%28Strasbourg%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Top 4 Best-Selling 4K Solar Security Cameras & Buying Guide (2026 Review)" class="card-img" loading="lazy">
+            <div class="card-body">
+                <div>
+                    <span class="pill">Smart Home & Security Tech</span>
+                    <h3 style="font-size:1.08rem;margin-bottom:8px;"><a href="https://store77.github.io/omniprime10-us/reviews/best-4k-solar-security-cameras-review-comparison-c1-1.html" style="color:var(--navy);text-decoration:none;">Top 4 Best-Selling 4K Solar Security Cameras & Buying Guide (2026 Review)</a></h3>
+                    <p style="font-size:0.85rem;color:var(--slate);">Side-by-side comparison of eufy Security SoloCam S340 Dual-Lens Solar (2026 Pro Edition), Schlage Encode Plus Wi-Fi HomeKey (2026 Pro Edition), and 2 more best-selling picks.</p>
+                </div>
+                <div style="margin-top:14px;">
+                    <a href="https://store77.github.io/omniprime10-us/reviews/best-4k-solar-security-cameras-review-comparison-c1-1.html" class="btn-outline" style="width:100%;">Read 4-Product Review &rarr;</a>
+                </div>
+            </div>
+        </article>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <h4>OmniPrime10 US Storefront</h4>
+                <p>Independent US buying-guide and product discovery platform covering Amazon's 10 best-selling consumer departments. Updated automatically every 12 hours.</p>
+                <p style="margin-top:10px;font-weight:700;color:var(--navy);">As an Amazon Associate I earn from qualifying purchases.</p>
+            </div>
+            <div>
+                <h4>Departments (1–5)</h4>
+                <a href="https://store77.github.io/omniprime10-us/categories/smart-home-security-tech.html">🛡️ Smart Home & Security Tech</a><a href="https://store77.github.io/omniprime10-us/categories/pet-care-automated-tech.html">🐾 Pet Care & Automated Tech</a><a href="https://store77.github.io/omniprime10-us/categories/outdoor-gear-camping.html">⛺ Outdoor Gear & Camping</a><a href="https://store77.github.io/omniprime10-us/categories/fitness-recovery-equipment.html">🏋️ Fitness & Recovery Equipment</a><a href="https://store77.github.io/omniprime10-us/categories/automotive-garage-tools.html">🚗 Automotive & Garage Tools</a>
+            </div>
+            <div>
+                <h4>Departments (6–10)</h4>
+                <a href="https://store77.github.io/omniprime10-us/categories/audio-creator-studio-gear.html">🎧 Audio & Creator Studio Gear</a><a href="https://store77.github.io/omniprime10-us/categories/baby-nursery-essentials.html">🍼 Baby & Nursery Essentials</a><a href="https://store77.github.io/omniprime10-us/categories/lawn-patio-power-tools.html">🛠️ Lawn, Patio & Power Tools</a><a href="https://store77.github.io/omniprime10-us/categories/travel-luggage-carry-ons.html">🧳 Travel Luggage & Carry-Ons</a><a href="https://store77.github.io/omniprime10-us/categories/coffee-tea-craft-beverage.html">☕ Coffee, Tea & Craft Beverage</a>
+            </div>
+            <div>
+                <h4>Compliance & Feeds</h4>
+                <a href="https://store77.github.io/omniprime10-us/legal.html#disclosure">Amazon Affiliate Disclosure</a>
+                <a href="https://store77.github.io/omniprime10-us/legal.html#privacy">Privacy Policy</a>
+                <a href="https://store77.github.io/omniprime10-us/legal.html#terms">Terms of Use</a>
+                <a href="https://store77.github.io/omniprime10-us/sitemap.xml">XML Sitemap</a>
+                <a href="https://store77.github.io/omniprime10-us/feed.xml">RSS 2.0 WebSub Feed</a>
+            </div>
+        </div>
+        <div style="max-width:1260px;margin:28px auto 0;padding-top:20px;border-top:1px solid var(--border);text-align:center;font-size:0.78rem;">
+            &copy; 2026 OmniPrime10 US. Not operated, endorsed, or sponsored by Amazon.com, Inc. Last 12-Hour Automated Build: 2026-10-29.
+        </div>
+    </footer>
+    
+    <script>
+        function runSearch() {
+            const q = document.getElementById('liveSearch').value.toLowerCase();
+            document.querySelectorAll('.prod-card').forEach(card => {
+                card.style.display = card.innerText.toLowerCase().includes(q) ? '' : 'none';
+            });
+        }
+        function filterDept(catSlug, btn) {
+            document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.prod-card').forEach(card => {
+                if (catSlug === 'all' || card.getAttribute('data-cat') === catSlug) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
